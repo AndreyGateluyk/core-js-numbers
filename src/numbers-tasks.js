@@ -441,8 +441,7 @@ function isNumber(/* number */) {
  * 5.1  => false
  * '5'  => false
  */
-function isInteger(/*num*/) {
-  //return Number.isInteger(num);
+function isInteger(/* num */) {
   throw new Error('Not implemented');
 }
 
