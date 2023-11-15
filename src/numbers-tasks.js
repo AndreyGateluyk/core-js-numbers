@@ -295,8 +295,13 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  const arr = [...num.toString()];
+  let count = 0;
+  for (let i = 0; i < arr.length; i += 1) {
+    count += Number(arr[i]);
+  }
+  return count;
 }
 
 /**
@@ -436,7 +441,8 @@ function isNumber(/* number */) {
  * 5.1  => false
  * '5'  => false
  */
-function isInteger(/* number */) {
+function isInteger(num) {
+  //return Number.isInteger(num);
   throw new Error('Not implemented');
 }
 
